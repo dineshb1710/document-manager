@@ -1,0 +1,17 @@
+# == Datasource Configuration == #
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/file_upload
+    username: root
+    password: admin
+
+# == Azure Storage Configuration == #
+azure:
+  storage:
+    accountName: tcpblobstorage
+    container-name: tcp
+    connection-string: BlobEndpoint=https://tcpblobstorage.blob.core.windows.net/;QueueEndpoint=https://tcpblobstorage.queue.core.windows.net/;FileEndpoint=https://tcpblobstorage.file.core.windows.net/;TableEndpoint=https://tcpblobstorage.table.core.windows.net/;SharedAccessSignature=sv=2020-08-04&ss=bfqt&srt=sco&sp=rwdlacuptfx&se=2021-08-11T12:43:21Z&st=2021-08-10T04:43:21Z&spr=https,http&sig=K%2BwSyuDZJqqOY3i8WLWxf5vsUOg7eEuGFK7GsWh3ick%3D
+
+log:
+  file:
+    details: false

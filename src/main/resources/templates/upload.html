@@ -1,0 +1,28 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Document Manager</title>
+    </head>
+    <body>
+        <h3>Welcome to Azure File Upload Service</h3>
+
+        <!-- File Upload Form -->
+        <form action="/api/v1/files/upload/" method="post" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td>
+                        <input type="file" id="myFile" name="myFile">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <!-- Response Div -->
+        <div>
+            <h4 th:text="${message}"></h4>
+        </div>
+    </body>
+</html>
